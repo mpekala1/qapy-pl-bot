@@ -5,8 +5,8 @@ const client = new Client({intents: ['MessageContent', 'GuildMembers', 'Guilds']
 )
 
 client.on('ready', () => {
-    console.log('Qapy.pl Bot is ready.')
-    client.user.setActivity('mc.qapy.pl')
+    console.log('BOT QAPY.PL ZOSTAŁ URUCHOMIONY!')
+    client.user.setActivity('QAPY.PL')
 });
 
 client.on('interactionCreate', (interaction) => {
