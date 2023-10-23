@@ -5,6 +5,21 @@ const commands = [
     name: 'ping',
     description: 'Replies with Pong!',
   },
+  {
+    name: 'say',
+    description: 'Repeat yourself!',
+    options:[
+      {name: 'text',
+      description: 'Text...',
+      type: 3,
+      required: true,
+     },
+     {name: 'text2',
+     description: 'Text...',
+     type: 3,
+     required: true,
+    }
+    ]},
 ];
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
