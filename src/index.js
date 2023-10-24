@@ -18,7 +18,7 @@ client.on('interactionCreate', (interaction) => {
     if (interaction.commandName === 'ping') {
         interaction.reply('Pong!');
     }
-    if (interaction.commandName === 'say') {
+    if (interaction.commandName === 'ogloszenie') {
         console.log(interaction.options.getString('text'));
         let title = interaction.options.getString('text')
         let message = interaction.options.getString('text2')
