@@ -4,6 +4,8 @@ export const color = {
     blue: 0x0099FF,
     purple: 0x8500eb,
     red: 0xdb0909,
+    green: 0x09db10,
+    yellow: 0xdbca09,
 }
 
 export function CreateEmbedMessage(title, message, color){
