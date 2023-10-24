@@ -6,18 +6,32 @@ const commands = [
     description: 'Replies with Pong!',
   },
   {
-    name: 'say',
+    name: 'ogloszenie',
     description: 'Repeat yourself!',
     options:[
-      {name: 'text',
-      description: 'Text...',
+      {name: 'title',
+      description: 'Wprowadź tytuł ogłoszenia...',
       type: 3,
       required: true,
      },
-     {name: 'text2',
-     description: 'Text...',
+     {name: 'content',
+     description: 'Wprowadź treść ogłoszenia...',
      type: 3,
      required: true,
+    }
+    ],
+    choices: [
+      {
+        name: "Dog",
+        "value": "animal_dog"
+    },
+    {
+        name: "Cat",
+        "value": "animal_cat"
+    },
+    {
+        name: "Penguin",
+        "value": "animal_penguin"
     }
     ]},
 ];
