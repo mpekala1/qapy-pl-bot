@@ -5,6 +5,35 @@ const commands = [
     name: 'ping',
     description: 'Replies with Pong!',
   },
+  {
+    name: 'ogloszenie',
+    description: 'Repeat yourself!',
+    options:[
+      {name: 'title',
+      description: 'Wprowadź tytuł ogłoszenia...',
+      type: 3,
+      required: true,
+     },
+     {name: 'content',
+     description: 'Wprowadź treść ogłoszenia...',
+     type: 3,
+     required: true,
+    }
+    ],
+    choices: [
+      {
+        name: "Dog",
+        "value": "animal_dog"
+    },
+    {
+        name: "Cat",
+        "value": "animal_cat"
+    },
+    {
+        name: "Penguin",
+        "value": "animal_penguin"
+    }
+    ]},
 ];
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
